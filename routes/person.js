@@ -4,4 +4,6 @@ const router = express.Router();
 
 router.get('/persons', personController.getPersons);
 
+router.get('/persons/:id', personController.getPersonById);
+
 module.exports = router;
